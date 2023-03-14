@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900");
+@import url("https://cdn.linearicons.com/free/1.0.0/icon-font.min.css");
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("./images/aerial-shot-beautiful-tree-forest-covered-with-fog-bled-slovenia.jpg") !important;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    margin-left: 40px !important;
+    margin-right: 40px !important;
+}
+
+.weather-card {
+    border-radius: 10px;
+    margin: 60px auto;
+    height: 740px;
+    width: 450px;
+    /*background: #fff;*/
+    box-shadow: 0 1px 38px rgba(0, 0, 0, 0.15), 0 5px 12px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+
+}
+
+.weather-card .top {
+    position: relative;
+    height: 570px;
+    width: 100%;
+    overflow: hidden;
+    /*background: url("./images/sapra.png") no-repeat;*/
+    /*background: black;*/
+    /*opacity: 10%;*/
+    /*filter: blur(8px);*/
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+}
+
+.weather-card .top .wrapper {
+    /*padding: 30px;*/
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(20%);
+}
+
+.weather-card .top .wrapper .mynav {
+    height: 20px;
+}
+
+.weather-card .top .wrapper .mynav .lnr {
+    color: #fff;
+    font-size: 20px;
+}
+
+.weather-card .top .wrapper .mynav .lnr-chevron-left {
+    display: inline-block;
+    float: left;
+}
+
+.weather-card .top .wrapper .mynav .lnr-cog {
+    display: inline-block;
+    float: right;
+}
+
+.weather-card .top .wrapper .heading {
+    margin-top: 20px;
+    font-size: 35px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.weather-card .top .wrapper .location {
+    margin-top: 20px;
+    font-size: 21px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.weather-card .top .wrapper .temp {
+    margin-top: 20px;
+}
+
+.weather-card .top .wrapper .temp a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.weather-card .top .wrapper .temp a .temp-type {
+    font-size: 85px;
+}
+
+.weather-card .top .wrapper .temp .temp-value {
+    display: inline-block;
+    font-size: 85px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.weather-card .top .wrapper .temp .deg {
+    display: inline-block;
+    font-size: 35px;
+    font-weight: 600;
+    color: #fff;
+    vertical-align: top;
+    margin-top: 10px;
+}
+
+.weather-card .top:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.weather-card .bottom {
+    padding: 0 30px;
+    background: black;
+    height: 100%;
+    width: 100%;
+}
+
+.weather-card .bottom:after {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+.weather-card .bottom .wrapper .forecast {
+    overflow: hidden;
+    margin: 0;
+    font-size: 0;
+    padding: 0;
+    padding-top: 20px;
+    max-height: 155px;
+}
+
+.weather-card .bottom .wrapper .forecast a {
+    text-decoration: none;
+    /*color: #000;*/
+}
+
+.weather-card .bottom .wrapper .forecast .go-up {
+    text-align: center;
+    display: block;
+    font-size: 25px;
+    margin-bottom: 10px;
+
+}
+
+.weather-card .bottom .wrapper .forecast li {
+    display: block;
+    font-size: 25px;
+    font-weight: 400;
+    /*color: rgba(0, 0, 0, 0.25);*/
+    color: whitesmoke;
+    line-height: 1em;
+    margin-bottom: 30px;
+}
+
+.weather-card .bottom .wrapper .forecast li .date {
+    display: inline-block;
+    color: whitesmoke;
+}
+
+.weather-card .bottom .wrapper .forecast li .condition {
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
+    font-size: 25px;
+}
+
+.weather-card .bottom .wrapper .forecast li .condition .temp {
+    display: inline-block;
+    vertical-align: top;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 2px;
+    color: whitesmoke;
+}
+
+.weather-card .bottom .wrapper .forecast li .condition .temp .deg {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 600;
+    margin-left: 3px;
+    vertical-align: top;
+}
+
+.weather-card .bottom .wrapper .forecast li .condition .temp .temp-type {
+    font-size: 20px;
+}
+
+.weather-card .bottom .wrapper .forecast li.active {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.weather-card.rain .top {
+    /*background: url("./images/3.jpeg") no-repeat;*/
+    background-size: cover;
+    background-position: center center;
+    /*filter: blur(10px);*/
+    opacity: 15%;
+    backdrop-filter: blur(25px);
+}
+
+.parent {
+    position: relative;
+}
+
+.img1 {
+    position: absolute;
+    top: 537px;
+    left: 15px !important;
+    width: 100px;
+    height: auto;
+}
+
+
+.weather-card .middle {
+    padding: 0 30px;
+    /*background: black;*/
+    height: 100%;
+    width: 100%;
+}
+
+.weather-card .middle:after {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+.weather-card .middle .wrapper .forecast {
+    overflow: hidden;
+    margin: 0;
+    font-size: 0;
+    padding: 0;
+    padding-top: 20px;
+    /*max-height: 155px;*/
+
+}
+
+.weather-card .middle .wrapper .forecast a {
+    text-decoration: none;
+    /*color: #000;*/
+     margin-left: 0 !important;
+}
+
+.weather-card .middle .wrapper .forecast .go-up {
+    text-align: center;
+    display: block;
+    font-size: 25px;
+    margin-bottom: 10px;
+     margin-left: 0 !important;
+
+}
+
+.weather-card .middle .wrapper .forecast li {
+    display: block;
+    font-size: 25px;
+    font-weight: 400;
+    /*color: rgba(0, 0, 0, 0.25);*/
+    color: whitesmoke;
+    line-height: 1em;
+    margin-bottom: 30px;
+     margin-left: 0 !important;
+}
+
+.weather-card .middle .wrapper .forecast li .date {
+    display: inline-block;
+    color: whitesmoke;
+     margin-left: 0 !important;
+}
+
+.weather-card .middle .wrapper .forecast li .condition {
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
+    font-size: 25px;
+     margin-left: 0 !important;
+}
+
+.weather-card .middle .wrapper .forecast li .condition .temp {
+    display: inline-block;
+    vertical-align: top;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 2px;
+    color: whitesmoke;
+}
+
+.weather-card .middle .wrapper .forecast li .condition .temp .deg {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 600;
+    margin-left: 3px;
+    vertical-align: top;
+
+}
+
+.weather-card .middle .wrapper .forecast li .condition .temp .temp-type {
+    font-size: 20px;
+}
+
+.weather-card .middle .wrapper .forecast li.active {
+    color: rgba(0, 0, 0, 0.8);
+    margin-left: 0 !important;
+}
+
+.weather-card.rain .top {
+    /*background: url("./images/3.jpeg") no-repeat;*/
+    background-size: cover;
+    background-position: center center;
+    /*filter: blur(10px);*/
+    opacity: 15%;
+    backdrop-filter: blur(25px);
+}
